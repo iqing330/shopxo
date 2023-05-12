@@ -9,10 +9,12 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo Asia/Shanghai > /etc/timezone
 
 # 安装基础命令（选用国内阿里云镜像源以提高下载速度）
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
-    && apk add --update --no-cache ca-certificates curl tzdata php-posix php7 php7-json \
-    php7-ctype php7-exif php7-pdo php7-pdo_mysql php7-fpm php7-curl nginx \
-    && rm -f /var/cache/apk/*
+RUN apt-get update && apt-get install -y \
+    php7.4 \
+    php7.4-fpm \
+    php7.4-gd \
+    php7.4-mbstring \
+    php7.4-zip 
 
 
 # 将项目目录下所有文件拷贝到工作目录
