@@ -1,5 +1,5 @@
 # 采用alpine官方镜像做为运行时镜像
-FROM alpine:3.13
+FROM ubuntu:18.04
 
 # 设定工作目录
 WORKDIR /app
