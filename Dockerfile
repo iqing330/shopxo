@@ -16,7 +16,14 @@ RUN apt-get update && apt-get install -y \
     php7.2-gd \
     php7.2-mbstring \
     php7.2-zip 
-
+    
+# 替换nginx、fpm、php配置
+RUN cp /app/config/nginx.conf /etc/nginx/conf.d/default.conf \
+    && cp /app/config/fpm.conf /etc/php/7.2/fpm/pool.d/www.conf \
+    && cp /app/config/php.ini /etc/php/7.2/fpm/php.ini \
+    && mkdir -p /run/nginx \
+    && chmod -R 777 /app/runtime \
+    && mv /usr/sbin/php-fpm7.2 /usr/sbin/php-fpm
 
 # 将项目目录下所有文件拷贝到工作目录
 COPY . /app
