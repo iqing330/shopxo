@@ -21,14 +21,6 @@ RUN apt-get update && apt-get install -y \
 # 将项目目录下所有文件拷贝到工作目录
 COPY . /app
 
-# 替换nginx、fpm、php配置
-RUN cp /app/config/nginx.conf /etc/nginx/conf.d/default.conf \
-    && cp /app/config/fpm.conf /etc/php7/php-fpm.d/ \
-    && cp /app/config/php.ini /etc/php7/php.ini \
-    && mkdir -p /run/nginx \
-    && chmod -R 777 /app/runtime \
-    && mv /usr/sbin/php-fpm7 /usr/sbin/php-fpm
-
 # 暴露端口
 # 此处端口必须与构建小程序服务端时填写的服务端口和探活端口一致，不然会部署失败
 EXPOSE 80
