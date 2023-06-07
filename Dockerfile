@@ -10,6 +10,7 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 
 # 安装基础命令（选用国内阿里云镜像源以提高下载速度）
 RUN apt-get update && apt-get install -y \
+    nginx \
     php7.2 \
     php7.2-fpm \
     php7.2-gd \
