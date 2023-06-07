@@ -25,8 +25,10 @@ RUN cp /app/config/nginx.conf /etc/nginx/conf.d/default.conf \
     && cp /app/config/fpm.conf /etc/php/7.2/fpm/pool.d/www.conf \
     && cp /app/config/php.ini /etc/php/7.2/fpm/php.ini \
     && mkdir -p /run/nginx \
+    && mkdir -p /run/php \
     && chmod -R 777 /app/runtime \
-    && mv /usr/sbin/php-fpm7.2 /usr/sbin/php-fpm
+    && mv /usr/sbin/php-fpm7.2 /usr/sbin/php-fpm \
+    && groupadd nobody
 
 # 暴露端口
 # 此处端口必须与构建小程序服务端时填写的服务端口和探活端口一致，不然会部署失败
