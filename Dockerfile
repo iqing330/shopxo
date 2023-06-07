@@ -23,7 +23,7 @@ COPY . /app
 
 # 替换nginx、fpm、php配置
 RUN cp /app/config/nginx.conf /etc/nginx/conf.d/default.conf \
-    && cp /app/config/fpm.conf /etc/php7/php-fpm.d/www.conf \
+    && cp /app/config/fpm.conf /etc/php7/php-fpm.d/ \
     && cp /app/config/php.ini /etc/php7/php.ini \
     && mkdir -p /run/nginx \
     && chmod -R 777 /app/runtime \
