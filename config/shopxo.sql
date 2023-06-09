@@ -1,14 +1,3 @@
-# ************************************************************
-# Sequel Pro SQL dump
-# Version 4541
-#
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
-#
-# Host: 127.0.0.1 (MySQL 5.7.31)
-# Database: shopxo_online
-# Generation Time: 2023-04-08 11:17:23 +0000
-# ************************************************************
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -20,8 +9,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table sxo_admin
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_admin`;
 
@@ -43,19 +30,14 @@ CREATE TABLE `sxo_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='管理员';
 
 LOCK TABLES `sxo_admin` WRITE;
-/*!40000 ALTER TABLE `sxo_admin` DISABLE KEYS */;
 
 INSERT INTO `sxo_admin` (`id`, `username`, `login_pwd`, `login_salt`, `mobile`, `email`, `gender`, `status`, `login_total`, `login_time`, `role_id`, `add_time`, `upd_time`)
 VALUES
 	(1,'admin','80b2c73b6e40c82ca7bf14d340ef3d48','611817','','xxx@email.com',0,0,1538,1680849732,1,1481350313,1659361312),
 	(4,'shopxo','8a0be7d8918209aab38b41514bed6791','112418','','',2,0,19,1667467387,13,1580807200,1659361305);
 
-/*!40000 ALTER TABLE `sxo_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_answer
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_answer`;
 
@@ -80,8 +62,6 @@ CREATE TABLE `sxo_answer` (
 
 
 
-# Dump of table sxo_app_center_nav
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_app_center_nav`;
 
@@ -105,7 +85,6 @@ CREATE TABLE `sxo_app_center_nav` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='手机 - 用户中心导航';
 
 LOCK TABLES `sxo_app_center_nav` WRITE;
-/*!40000 ALTER TABLE `sxo_app_center_nav` DISABLE KEYS */;
 
 INSERT INTO `sxo_app_center_nav` (`id`, `platform`, `event_type`, `event_value`, `images_url`, `name`, `desc`, `is_enable`, `is_need_login`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -186,9 +165,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_app_home_nav
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_app_home_nav`;
 
 CREATE TABLE `sxo_app_home_nav` (
@@ -211,7 +187,6 @@ CREATE TABLE `sxo_app_home_nav` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='手机 - 首页导航';
 
 LOCK TABLES `sxo_app_home_nav` WRITE;
-/*!40000 ALTER TABLE `sxo_app_home_nav` DISABLE KEYS */;
 
 INSERT INTO `sxo_app_home_nav` (`id`, `platform`, `event_type`, `event_value`, `images_url`, `name`, `is_enable`, `is_need_login`, `bg_color`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -255,9 +230,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_article
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_article`;
 
 CREATE TABLE `sxo_article` (
@@ -286,7 +258,6 @@ CREATE TABLE `sxo_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='文章';
 
 LOCK TABLES `sxo_article` WRITE;
-/*!40000 ALTER TABLE `sxo_article` DISABLE KEYS */;
 
 INSERT INTO `sxo_article` (`id`, `title`, `article_category_id`, `title_color`, `jump_url`, `is_enable`, `content`, `images`, `images_count`, `access_count`, `is_home_recommended`, `seo_title`, `seo_keywords`, `seo_desc`, `add_time`, `upd_time`)
 VALUES
@@ -323,9 +294,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_article_category
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_article_category`;
 
 CREATE TABLE `sxo_article_category` (
@@ -342,7 +310,6 @@ CREATE TABLE `sxo_article_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='文章分类';
 
 LOCK TABLES `sxo_article_category` WRITE;
-/*!40000 ALTER TABLE `sxo_article_category` DISABLE KEYS */;
 
 INSERT INTO `sxo_article_category` (`id`, `pid`, `name`, `is_enable`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -356,9 +323,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_article_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_attachment
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_attachment`;
 
@@ -379,7 +343,6 @@ CREATE TABLE `sxo_attachment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='附件';
 
 LOCK TABLES `sxo_attachment` WRITE;
-/*!40000 ALTER TABLE `sxo_attachment` DISABLE KEYS */;
 
 INSERT INTO `sxo_attachment` (`id`, `title`, `original`, `path_type`, `size`, `ext`, `type`, `url`, `hash`, `add_time`)
 VALUES
@@ -529,9 +492,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_brand
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_brand`;
 
 CREATE TABLE `sxo_brand` (
@@ -552,7 +512,6 @@ CREATE TABLE `sxo_brand` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='品牌';
 
 LOCK TABLES `sxo_brand` WRITE;
-/*!40000 ALTER TABLE `sxo_brand` DISABLE KEYS */;
 
 INSERT INTO `sxo_brand` (`id`, `logo`, `name`, `describe`, `website_url`, `is_enable`, `sort`, `seo_title`, `seo_keywords`, `seo_desc`, `add_time`, `upd_time`)
 VALUES
@@ -563,9 +522,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_brand` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_brand_category
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_brand_category`;
 
@@ -581,7 +537,6 @@ CREATE TABLE `sxo_brand_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='品牌分类';
 
 LOCK TABLES `sxo_brand_category` WRITE;
-/*!40000 ALTER TABLE `sxo_brand_category` DISABLE KEYS */;
 
 INSERT INTO `sxo_brand_category` (`id`, `name`, `is_enable`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -603,9 +558,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_brand_category_join
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_brand_category_join`;
 
 CREATE TABLE `sxo_brand_category_join` (
@@ -619,7 +571,6 @@ CREATE TABLE `sxo_brand_category_join` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='品牌分类关联';
 
 LOCK TABLES `sxo_brand_category_join` WRITE;
-/*!40000 ALTER TABLE `sxo_brand_category_join` DISABLE KEYS */;
 
 INSERT INTO `sxo_brand_category_join` (`id`, `brand_id`, `brand_category_id`, `add_time`)
 VALUES
@@ -634,9 +585,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_brand_category_join` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_cart
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_cart`;
 
@@ -661,9 +609,6 @@ CREATE TABLE `sxo_cart` (
 
 
 
-# Dump of table sxo_config
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_config`;
 
 CREATE TABLE `sxo_config` (
@@ -680,7 +625,6 @@ CREATE TABLE `sxo_config` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COMMENT='基本配置参数';
 
 LOCK TABLES `sxo_config` WRITE;
-/*!40000 ALTER TABLE `sxo_config` DISABLE KEYS */;
 
 INSERT INTO `sxo_config` (`id`, `value`, `name`, `describe`, `error_tips`, `type`, `only_tag`, `upd_time`)
 VALUES
@@ -925,9 +869,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_custom_view
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_custom_view`;
 
 CREATE TABLE `sxo_custom_view` (
@@ -954,7 +895,6 @@ CREATE TABLE `sxo_custom_view` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='自定义页面';
 
 LOCK TABLES `sxo_custom_view` WRITE;
-/*!40000 ALTER TABLE `sxo_custom_view` DISABLE KEYS */;
 
 INSERT INTO `sxo_custom_view` (`id`, `logo`, `name`, `html_content`, `css_content`, `js_content`, `is_enable`, `is_header`, `is_footer`, `is_full_screen`, `access_count`, `seo_title`, `seo_keywords`, `seo_desc`, `add_time`, `upd_time`)
 VALUES
@@ -963,9 +903,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_custom_view` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_design
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_design`;
 
@@ -991,10 +928,6 @@ CREATE TABLE `sxo_design` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='页面设计';
 
 
-
-# Dump of table sxo_express
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_express`;
 
 CREATE TABLE `sxo_express` (
@@ -1012,7 +945,6 @@ CREATE TABLE `sxo_express` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='快递公司';
 
 LOCK TABLES `sxo_express` WRITE;
-/*!40000 ALTER TABLE `sxo_express` DISABLE KEYS */;
 
 INSERT INTO `sxo_express` (`id`, `pid`, `icon`, `name`, `website_url`, `is_enable`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -1034,10 +966,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_express` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_form_table_user_fields
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_form_table_user_fields`;
 
 CREATE TABLE `sxo_form_table_user_fields` (
@@ -1054,10 +982,6 @@ CREATE TABLE `sxo_form_table_user_fields` (
   KEY `md5_key` (`md5_key`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='动态表格用户自定义字段';
 
-
-
-# Dump of table sxo_goods
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods`;
 
@@ -1109,7 +1033,6 @@ CREATE TABLE `sxo_goods` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品';
 
 LOCK TABLES `sxo_goods` WRITE;
-/*!40000 ALTER TABLE `sxo_goods` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods` (`id`, `brand_id`, `site_type`, `title`, `title_color`, `simple_desc`, `model`, `place_origin`, `inventory`, `inventory_unit`, `images`, `original_price`, `min_original_price`, `max_original_price`, `price`, `min_price`, `max_price`, `give_integral`, `buy_min_number`, `buy_max_number`, `is_deduction_inventory`, `is_shelves`, `content_web`, `photo_count`, `sales_count`, `access_count`, `video`, `is_exist_many_spec`, `spec_base`, `fictitious_goods_value`, `seo_title`, `seo_keywords`, `seo_desc`, `is_delete_time`, `add_time`, `upd_time`)
 VALUES
@@ -1129,10 +1052,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_goods` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_goods_browse
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_browse`;
 
 CREATE TABLE `sxo_goods_browse` (
@@ -1145,9 +1064,6 @@ CREATE TABLE `sxo_goods_browse` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户商品浏览';
 
 
-
-# Dump of table sxo_goods_category
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_category`;
 
@@ -1175,7 +1091,6 @@ CREATE TABLE `sxo_goods_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品分类';
 
 LOCK TABLES `sxo_goods_category` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_category` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_category` (`id`, `pid`, `icon`, `name`, `vice_name`, `describe`, `bg_color`, `big_images`, `is_home_recommended`, `sort`, `is_enable`, `seo_title`, `seo_keywords`, `seo_desc`, `add_time`, `upd_time`)
 VALUES
@@ -2030,9 +1945,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_category_join
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_category_join`;
 
 CREATE TABLE `sxo_goods_category_join` (
@@ -2046,7 +1958,6 @@ CREATE TABLE `sxo_goods_category_join` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品分类关联';
 
 LOCK TABLES `sxo_goods_category_join` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_category_join` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_category_join` (`id`, `goods_id`, `category_id`, `add_time`)
 VALUES
@@ -2115,9 +2026,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_comments
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_comments`;
 
 CREATE TABLE `sxo_goods_comments` (
@@ -2144,9 +2052,6 @@ CREATE TABLE `sxo_goods_comments` (
 
 
 
-# Dump of table sxo_goods_content_app
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_content_app`;
 
 CREATE TABLE `sxo_goods_content_app` (
@@ -2162,7 +2067,6 @@ CREATE TABLE `sxo_goods_content_app` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品手机详情';
 
 LOCK TABLES `sxo_goods_content_app` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_content_app` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_content_app` (`id`, `goods_id`, `images`, `content`, `sort`, `add_time`)
 VALUES
@@ -2210,8 +2114,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_favor
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_favor`;
 
@@ -2223,10 +2125,6 @@ CREATE TABLE `sxo_goods_favor` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户商品收藏';
 
-
-
-# Dump of table sxo_goods_give_integral_log
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_give_integral_log`;
 
@@ -2253,9 +2151,6 @@ CREATE TABLE `sxo_goods_give_integral_log` (
 
 
 
-# Dump of table sxo_goods_params
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_params`;
 
 CREATE TABLE `sxo_goods_params` (
@@ -2273,7 +2168,6 @@ CREATE TABLE `sxo_goods_params` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品参数';
 
 LOCK TABLES `sxo_goods_params` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_params` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_params` (`id`, `goods_id`, `type`, `name`, `value`, `add_time`)
 VALUES
@@ -2302,8 +2196,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_params_template
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_params_template`;
 
@@ -2322,7 +2214,6 @@ CREATE TABLE `sxo_goods_params_template` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品参数模板';
 
 LOCK TABLES `sxo_goods_params_template` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_params_template` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_params_template` (`id`, `category_id`, `name`, `is_enable`, `config_count`, `add_time`, `upd_time`)
 VALUES
@@ -2332,8 +2223,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_params_template_config
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_params_template_config`;
 
@@ -2350,7 +2239,6 @@ CREATE TABLE `sxo_goods_params_template_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品参数模板值';
 
 LOCK TABLES `sxo_goods_params_template_config` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_params_template_config` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_params_template_config` (`id`, `template_id`, `type`, `name`, `value`, `add_time`)
 VALUES
@@ -2369,8 +2257,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_photo
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_photo`;
 
@@ -2388,7 +2274,6 @@ CREATE TABLE `sxo_goods_photo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品相册图片';
 
 LOCK TABLES `sxo_goods_photo` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_photo` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_photo` (`id`, `goods_id`, `images`, `is_show`, `sort`, `add_time`)
 VALUES
@@ -2437,9 +2322,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_spec_base
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_spec_base`;
 
 CREATE TABLE `sxo_goods_spec_base` (
@@ -2461,7 +2343,6 @@ CREATE TABLE `sxo_goods_spec_base` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品规格基础';
 
 LOCK TABLES `sxo_goods_spec_base` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_spec_base` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_spec_base` (`id`, `goods_id`, `price`, `original_price`, `inventory`, `buy_min_number`, `buy_max_number`, `weight`, `volume`, `coding`, `barcode`, `extends`, `add_time`)
 VALUES
@@ -2507,9 +2388,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_spec_template
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_spec_template`;
 
 CREATE TABLE `sxo_goods_spec_template` (
@@ -2526,7 +2404,6 @@ CREATE TABLE `sxo_goods_spec_template` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品规格模板';
 
 LOCK TABLES `sxo_goods_spec_template` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_spec_template` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_spec_template` (`id`, `category_id`, `name`, `content`, `is_enable`, `add_time`, `upd_time`)
 VALUES
@@ -2536,9 +2413,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_goods_spec_template` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_goods_spec_type
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_goods_spec_type`;
 
@@ -2553,7 +2427,6 @@ CREATE TABLE `sxo_goods_spec_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品规格类型';
 
 LOCK TABLES `sxo_goods_spec_type` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_spec_type` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_spec_type` (`id`, `goods_id`, `value`, `name`, `add_time`)
 VALUES
@@ -2571,9 +2444,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_goods_spec_value
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_goods_spec_value`;
 
 CREATE TABLE `sxo_goods_spec_value` (
@@ -2588,7 +2458,6 @@ CREATE TABLE `sxo_goods_spec_value` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='商品规格值';
 
 LOCK TABLES `sxo_goods_spec_value` WRITE;
-/*!40000 ALTER TABLE `sxo_goods_spec_value` DISABLE KEYS */;
 
 INSERT INTO `sxo_goods_spec_value` (`id`, `goods_id`, `goods_spec_base_id`, `value`, `add_time`)
 VALUES
@@ -2661,9 +2530,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_layout
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_layout`;
 
 CREATE TABLE `sxo_layout` (
@@ -2681,7 +2547,6 @@ CREATE TABLE `sxo_layout` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='布局配置';
 
 LOCK TABLES `sxo_layout` WRITE;
-/*!40000 ALTER TABLE `sxo_layout` DISABLE KEYS */;
 
 INSERT INTO `sxo_layout` (`id`, `type`, `name`, `config`, `is_enable`, `add_time`, `upd_time`)
 VALUES
@@ -2690,9 +2555,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_layout` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_link
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_link`;
 
@@ -2712,7 +2574,6 @@ CREATE TABLE `sxo_link` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='友情链接';
 
 LOCK TABLES `sxo_link` WRITE;
-/*!40000 ALTER TABLE `sxo_link` DISABLE KEYS */;
 
 INSERT INTO `sxo_link` (`id`, `name`, `url`, `describe`, `sort`, `is_enable`, `is_new_window_open`, `add_time`, `upd_time`)
 VALUES
@@ -2731,9 +2592,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_link` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_message
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_message`;
 
@@ -2756,9 +2614,6 @@ CREATE TABLE `sxo_message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='消息';
 
 
-
-# Dump of table sxo_navigation
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_navigation`;
 
@@ -2783,7 +2638,6 @@ CREATE TABLE `sxo_navigation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='导航';
 
 LOCK TABLES `sxo_navigation` WRITE;
-/*!40000 ALTER TABLE `sxo_navigation` DISABLE KEYS */;
 
 INSERT INTO `sxo_navigation` (`id`, `pid`, `name`, `url`, `value`, `data_type`, `nav_type`, `sort`, `is_show`, `is_new_window_open`, `add_time`, `upd_time`)
 VALUES
@@ -2817,8 +2671,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_order
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order`;
 
@@ -2870,8 +2722,6 @@ CREATE TABLE `sxo_order` (
 
 
 
-# Dump of table sxo_order_address
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_address`;
 
@@ -2905,8 +2755,6 @@ CREATE TABLE `sxo_order_address` (
 
 
 
-# Dump of table sxo_order_aftersale
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_aftersale`;
 
@@ -2946,8 +2794,6 @@ CREATE TABLE `sxo_order_aftersale` (
 
 
 
-# Dump of table sxo_order_currency
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_currency`;
 
@@ -2970,8 +2816,6 @@ CREATE TABLE `sxo_order_currency` (
 
 
 
-# Dump of table sxo_order_detail
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_detail`;
 
@@ -3004,8 +2848,6 @@ CREATE TABLE `sxo_order_detail` (
 
 
 
-# Dump of table sxo_order_extraction_code
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_extraction_code`;
 
@@ -3023,8 +2865,6 @@ CREATE TABLE `sxo_order_extraction_code` (
 
 
 
-# Dump of table sxo_order_fictitious_value
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_fictitious_value`;
 
@@ -3044,8 +2884,6 @@ CREATE TABLE `sxo_order_fictitious_value` (
 
 
 
-# Dump of table sxo_order_goods_inventory_log
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_goods_inventory_log`;
 
@@ -3069,8 +2907,6 @@ CREATE TABLE `sxo_order_goods_inventory_log` (
 
 
 
-# Dump of table sxo_order_status_history
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_order_status_history`;
 
@@ -3091,8 +2927,6 @@ CREATE TABLE `sxo_order_status_history` (
 
 
 
-# Dump of table sxo_pay_log
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_pay_log`;
 
@@ -3125,8 +2959,6 @@ CREATE TABLE `sxo_pay_log` (
 
 
 
-# Dump of table sxo_pay_log_value
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_pay_log_value`;
 
@@ -3144,8 +2976,6 @@ CREATE TABLE `sxo_pay_log_value` (
 
 
 
-# Dump of table sxo_pay_request_log
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_pay_request_log`;
 
@@ -3174,8 +3004,6 @@ CREATE TABLE `sxo_pay_request_log` (
 
 
 
-# Dump of table sxo_payment
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_payment`;
 
@@ -3205,8 +3033,6 @@ CREATE TABLE `sxo_payment` (
 
 
 
-# Dump of table sxo_plugins
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_plugins`;
 
@@ -3226,8 +3052,6 @@ CREATE TABLE `sxo_plugins` (
 
 
 
-# Dump of table sxo_power
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_power`;
 
@@ -3246,7 +3070,6 @@ CREATE TABLE `sxo_power` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='权限';
 
 LOCK TABLES `sxo_power` WRITE;
-/*!40000 ALTER TABLE `sxo_power` DISABLE KEYS */;
 
 INSERT INTO `sxo_power` (`id`, `pid`, `name`, `control`, `action`, `url`, `sort`, `is_show`, `icon`, `add_time`)
 VALUES
@@ -3523,8 +3346,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_quick_nav
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_quick_nav`;
 
@@ -3547,7 +3368,6 @@ CREATE TABLE `sxo_quick_nav` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='快捷导航';
 
 LOCK TABLES `sxo_quick_nav` WRITE;
-/*!40000 ALTER TABLE `sxo_quick_nav` DISABLE KEYS */;
 
 INSERT INTO `sxo_quick_nav` (`id`, `platform`, `event_type`, `event_value`, `images_url`, `name`, `is_enable`, `bg_color`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -3584,8 +3404,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_refund_log
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_refund_log`;
 
@@ -3614,9 +3432,6 @@ CREATE TABLE `sxo_refund_log` (
 
 
 
-# Dump of table sxo_region
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_region`;
 
 CREATE TABLE `sxo_region` (
@@ -3642,7 +3457,6 @@ CREATE TABLE `sxo_region` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COMMENT='地区';
 
 LOCK TABLES `sxo_region` WRITE;
-/*!40000 ALTER TABLE `sxo_region` DISABLE KEYS */;
 
 INSERT INTO `sxo_region` (`id`, `pid`, `name`, `level`, `letters`, `code`, `lng`, `lat`, `sort`, `is_enable`, `add_time`, `upd_time`)
 VALUES
@@ -7098,8 +6912,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_role
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_role`;
 
@@ -7113,7 +6925,6 @@ CREATE TABLE `sxo_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='角色组';
 
 LOCK TABLES `sxo_role` WRITE;
-/*!40000 ALTER TABLE `sxo_role` DISABLE KEYS */;
 
 INSERT INTO `sxo_role` (`id`, `name`, `is_enable`, `add_time`, `upd_time`)
 VALUES
@@ -7124,8 +6935,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_role_plugins
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_role_plugins`;
 
@@ -7142,7 +6951,6 @@ CREATE TABLE `sxo_role_plugins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='角色与权限插件';
 
 LOCK TABLES `sxo_role_plugins` WRITE;
-/*!40000 ALTER TABLE `sxo_role_plugins` DISABLE KEYS */;
 
 INSERT INTO `sxo_role_plugins` (`id`, `role_id`, `name`, `plugins`, `add_time`)
 VALUES
@@ -7152,8 +6960,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_role_power
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_role_power`;
 
@@ -7168,7 +6974,6 @@ CREATE TABLE `sxo_role_power` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='角色与权限管理';
 
 LOCK TABLES `sxo_role_power` WRITE;
-/*!40000 ALTER TABLE `sxo_role_power` DISABLE KEYS */;
 
 INSERT INTO `sxo_role_power` (`id`, `role_id`, `power_id`, `add_time`)
 VALUES
@@ -7261,8 +7066,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_screening_price
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_screening_price`;
 
@@ -7282,7 +7085,6 @@ CREATE TABLE `sxo_screening_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='筛选价格';
 
 LOCK TABLES `sxo_screening_price` WRITE;
-/*!40000 ALTER TABLE `sxo_screening_price` DISABLE KEYS */;
 
 INSERT INTO `sxo_screening_price` (`id`, `pid`, `name`, `min_price`, `max_price`, `is_enable`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -7304,8 +7106,6 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table sxo_search_history
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_search_history`;
 
@@ -7328,8 +7128,6 @@ CREATE TABLE `sxo_search_history` (
 
 
 
-# Dump of table sxo_slide
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_slide`;
 
@@ -7352,7 +7150,6 @@ CREATE TABLE `sxo_slide` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='轮播图片';
 
 LOCK TABLES `sxo_slide` WRITE;
-/*!40000 ALTER TABLE `sxo_slide` DISABLE KEYS */;
 
 INSERT INTO `sxo_slide` (`id`, `platform`, `event_type`, `event_value`, `images_url`, `name`, `bg_color`, `is_enable`, `sort`, `add_time`, `upd_time`)
 VALUES
@@ -7375,9 +7172,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_slide` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_user
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_user`;
 
@@ -7416,8 +7210,6 @@ CREATE TABLE `sxo_user` (
 
 
 
-# Dump of table sxo_user_address
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_user_address`;
 
@@ -7448,8 +7240,6 @@ CREATE TABLE `sxo_user_address` (
 
 
 
-# Dump of table sxo_user_integral_log
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_user_integral_log`;
 
@@ -7469,8 +7259,6 @@ CREATE TABLE `sxo_user_integral_log` (
 
 
 
-# Dump of table sxo_user_platform
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_user_platform`;
 
@@ -7510,10 +7298,6 @@ CREATE TABLE `sxo_user_platform` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='用户平台';
 
 
-
-# Dump of table sxo_warehouse
-# ------------------------------------------------------------
-
 DROP TABLE IF EXISTS `sxo_warehouse`;
 
 CREATE TABLE `sxo_warehouse` (
@@ -7543,7 +7327,6 @@ CREATE TABLE `sxo_warehouse` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='仓库';
 
 LOCK TABLES `sxo_warehouse` WRITE;
-/*!40000 ALTER TABLE `sxo_warehouse` DISABLE KEYS */;
 
 INSERT INTO `sxo_warehouse` (`id`, `name`, `alias`, `level`, `is_enable`, `contacts_name`, `contacts_tel`, `province`, `city`, `county`, `address`, `lng`, `lat`, `is_default`, `is_delete_time`, `add_time`, `upd_time`)
 VALUES
@@ -7552,9 +7335,6 @@ VALUES
 /*!40000 ALTER TABLE `sxo_warehouse` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-# Dump of table sxo_warehouse_goods
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_warehouse_goods`;
 
@@ -7574,7 +7354,6 @@ CREATE TABLE `sxo_warehouse_goods` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='仓库商品';
 
 LOCK TABLES `sxo_warehouse_goods` WRITE;
-/*!40000 ALTER TABLE `sxo_warehouse_goods` DISABLE KEYS */;
 
 INSERT INTO `sxo_warehouse_goods` (`id`, `warehouse_id`, `goods_id`, `is_enable`, `inventory`, `add_time`, `upd_time`)
 VALUES
@@ -7592,10 +7371,6 @@ VALUES
 
 /*!40000 ALTER TABLE `sxo_warehouse_goods` ENABLE KEYS */;
 UNLOCK TABLES;
-
-
-# Dump of table sxo_warehouse_goods_spec
-# ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `sxo_warehouse_goods_spec`;
 
@@ -7617,7 +7392,6 @@ CREATE TABLE `sxo_warehouse_goods_spec` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='仓库商品规格';
 
 LOCK TABLES `sxo_warehouse_goods_spec` WRITE;
-/*!40000 ALTER TABLE `sxo_warehouse_goods_spec` DISABLE KEYS */;
 
 INSERT INTO `sxo_warehouse_goods_spec` (`id`, `warehouse_goods_id`, `warehouse_id`, `goods_id`, `md5_key`, `spec`, `inventory`, `add_time`)
 VALUES
@@ -7658,14 +7432,5 @@ VALUES
 	(2062,5,1,8,'52636511861a0e08cbe6a0eb1c27d816','[{\"type\":\"颜色\",\"value\":\"红色\"}]',888,1669711401),
 	(2063,5,1,8,'9c9aabab3f7627ff4bb224b2738b26ea','[{\"type\":\"颜色\",\"value\":\"蓝色\"}]',888,1669711401);
 
-/*!40000 ALTER TABLE `sxo_warehouse_goods_spec` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
