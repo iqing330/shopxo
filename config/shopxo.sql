@@ -1,15 +1,3 @@
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-
-
 DROP TABLE IF EXISTS `sxo_admin`;
 
 CREATE TABLE `sxo_admin` (
@@ -59,9 +47,6 @@ CREATE TABLE `sxo_answer` (
   KEY `user_id` (`name`) USING BTREE,
   KEY `is_show` (`is_show`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户留言/问答';
-
-
-
 
 DROP TABLE IF EXISTS `sxo_app_center_nav`;
 
@@ -161,7 +146,6 @@ VALUES
 	(71,'kuaishou',1,'/pages/plugins/invoice/user/user','/static/upload/images/app_center_nav/2020/12/08/1607398361522502.png','我的发票','',1,0,0,1607398368,0),
 	(72,'kuaishou',1,'/pages/plugins/signin/user/user','/static/upload/images/app_center_nav/2020/12/22/1608608498784252.png','我的签到','',1,0,0,1607398368,1608608501);
 
-/*!40000 ALTER TABLE `sxo_app_center_nav` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -226,7 +210,6 @@ VALUES
 	(34,'kuaishou',1,'/pages/plugins/weixinliveplayer/index/index','/static/upload/images/app_nav/2020/04/19/1587304154495133.png','直播',1,0,'#FF00CC',0,1542613752,1635418356),
 	(35,'kuaishou',1,'/pages/plugins/seckill/index/index','/static/upload/images/app_nav/2018/11/19/2018111915473948001.png','秒杀',1,0,'#FF0066',0,1635418404,1635418455);
 
-/*!40000 ALTER TABLE `sxo_app_home_nav` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -290,7 +273,6 @@ VALUES
 	(28,'联系我们',24,'','',1,'<p style=\"padding: 5px; margin-top: 0px; margin-bottom: 0px; clear: both; color: rgb(102, 102, 102); text-align: center;\"><strong style=\"text-align: center; white-space: normal;\"><span style=\"color: rgb(255, 0, 0); font-size: 36px;\">演示站点、请勿下单支付。</span></strong></p><p style=\"padding: 5px; margin-top: 0px; margin-bottom: 0px; clear: both; color: rgb(102, 102, 102); font-family: \">欢迎您对我们的站点、工作、产品和服务提出自己宝贵的意见或建议。我们将给予您及时答复。同时也欢迎您到我们公司来洽商业务。</p><p style=\"padding: 5px; margin-top: 0px; margin-bottom: 0px; clear: both; color: rgb(102, 102, 102); font-family: \"><br/><strong style=\"font-size: 1em;\">公司名称</strong>： ShopXO</p><p style=\"padding: 5px; margin-top: 0px; margin-bottom: 0px; clear: both; color: rgb(102, 102, 102); font-family: \"><strong style=\"font-size: 1em;\">通信地址</strong>： 上海市xxxx 号</p><p style=\"padding: 5px; margin-top: 0px; margin-bottom: 0px; clear: both; color: rgb(102, 102, 102); font-family: \"><strong style=\"font-size: 1em;\">商务洽谈</strong>： 176-8888-8888</p><table class=\"am-table am-table-bordered\"><tbody><tr class=\"firstRow\"><td width=\"301\" valign=\"top\" style=\"word-break: break-all;\"><strong>标题表格演功能示</strong></td><td width=\"301\" valign=\"top\" style=\"word-break: break-all;\"><strong>价格(元)</strong></td><td width=\"301\" valign=\"top\" style=\"word-break: break-all;\"><strong>状态</strong></td></tr><tr><td width=\"301\" valign=\"top\" style=\"word-break: break-all;\">商品名称</td><td width=\"301\" valign=\"top\" style=\"word-break: break-all;\"><span style=\"color: rgb(227, 108, 9);\">￥100.00</span></td><td width=\"301\" valign=\"top\" style=\"word-break: break-all;\"><span style=\"color: rgb(0, 176, 80);\">有效</span></td></tr></tbody></table>','',0,287,1,'联系我们文章详情ShopXO','联系我们,ShopXO开源商城','国内领先企业级B2C开源电商系统！',1534229110,1657353466),
 	(29,'关于ShopXO',24,'#FF0000','',1,'<p style=\"text-align: center;\"><strong><span style=\"color: rgb(255, 0, 0); font-size: 36px;\">演示站点、请勿下单支付。</span></strong></p><p>ShopXO位于上海市浦东新区，是专业从事生产管理信息化领域技术咨询和软件开发的高新技术企业。公司拥有多名技术人才和资深的行业解决方案专家。</p><p><br/></p><p>公司拥有一支勇于开拓、具有战略眼光和敏锐市场判断力的市场营销队伍，一批求实敬业，追求卓越的行政管理人才，一个能征善战，技术优秀，经验丰富的开发团队。公司坚持按现代企业制度和市场规律办事，在扩大经营规模的同时，注重企业经济运行质量，在自主产品研发及承接软件项目方面获得了很强的竞争力。 我公司也积极参与国内传统企业的信息化改造，引进国际化产品开发的标准，规范软件开发流程，通过提升各层面的软件开发人才的技术素质，打造国产软件精品，目前已经开发出具有自主知识产权的网络商城软件，还在积极开发基于电子商务平台高效能、高效益的管理系统。为今后进一步开拓国内市场打下坚实的基础。公司致力于构造一个开放、发展的人才平台，积极营造追求卓越、积极奉献的工作氛围，把“以人为本”的理念落实到每一项具体工作中，为那些锋芒内敛，激情无限的业界精英提供充分的发展空间，优雅自信、从容自得的工作环境，事业雄心与生活情趣两相兼顾的生活方式。并通过每个员工不断提升自我，以自己的独特价值观对工作与生活作最准确的判断，使我们每一个员工彰显出他们出色的自我品位，独有的工作个性和卓越的创新风格，让他们时刻保持振奋、不断鼓舞内心深处的梦想，永远走在时代潮流前端。公司发展趋势 励精图治，展望未来。公司把发展产业策略与发掘人才策略紧密结合，广纳社会精英，挖掘创新潜能，以人为本，凝聚人气，努力营造和谐宽松的工作氛围，为优秀人才的脱颖而出提供机遇。公司将在深入发展软件产业的同时，通过不懈的努力，来塑造大型软件公司的辉煌形象。</p>','',0,91,1,'','','',1534229221,1627540294);
 
-/*!40000 ALTER TABLE `sxo_article` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -320,7 +302,6 @@ VALUES
 	(18,0,'客服中心',1,0,1482840577,1605775056),
 	(24,0,'关于我们',1,0,1483951541,1605775135);
 
-/*!40000 ALTER TABLE `sxo_article_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -488,7 +469,6 @@ VALUES
 	(1442,'1653645476953808.jpg','banner-2.jpg','slide',357229,'.jpg','image','/static/upload/images/slide/2022/05/27/1653645476953808.jpg','17023b096dc23594b66d5222424b4e067703c5dad3079fa24f717c141753353a',1653645476),
 	(1444,'1653646660511503.jpg','banner-1.jpg','slide',416202,'.jpg','image','/static/upload/images/slide/2022/05/27/1653646660511503.jpg','9b9c44ec3ea0c4367208a1b93b3ad580097d47e8fcb46f0c581a234d9c6ea173',1653646660);
 
-/*!40000 ALTER TABLE `sxo_attachment` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -519,7 +499,6 @@ VALUES
 	(2,'/static/upload/images/brand/2019/02/25/1551064277207182.jpeg','佳洁士','佳洁士是享誉全球的口腔护理品牌,旗下有牙膏,牙刷,牙贴和漱口水等多种产品。上佳洁士官网,了解更多佳洁士产品和口腔保健的资讯。','https://www.crest.com.cn/',1,0,'','','',1551064299,1610346851),
 	(3,'','阿迪达斯','阿迪达斯一般指adidas。adidas（阿迪达斯）创办于1949年，是德国运动用品制造商阿迪达斯AG成员公司。以其创办人阿道夫·阿迪·达斯勒（Adolf Adi Dassler）。','https://www.adidas.com.cn/',1,0,'','','',1610019864,1610351690);
 
-/*!40000 ALTER TABLE `sxo_brand` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -554,7 +533,6 @@ VALUES
 	(30,'虚拟充值',1,0,1535684745,1605775402),
 	(31,'其他',1,0,1535684797,1605775399);
 
-/*!40000 ALTER TABLE `sxo_brand_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -582,7 +560,6 @@ VALUES
 	(54,1,27,1610346871),
 	(55,3,10,1610351690);
 
-/*!40000 ALTER TABLE `sxo_brand_category_join` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -865,7 +842,6 @@ VALUES
 	(267,'0','前端使用多语言','默认关闭','请选择前端使用多语言','home','home_use_multilingual_status',1558022648),
 	(268,'0','用户以系统类标识维度','默认关闭','请选择用户以系统类标识维度','common','common_user_unique_system_type_model',1558022648);
 
-/*!40000 ALTER TABLE `sxo_config` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -900,7 +876,6 @@ INSERT INTO `sxo_custom_view` (`id`, `logo`, `name`, `html_content`, `css_conten
 VALUES
 	(1,'','测试自定义页面22沙发上冬瓜豆腐东方红甘肃光合谷 vV 币 vv 小白菜 v 吧俄国人搞活动个人风格 VC 不超过吧都是','<p><img src=\"/static/upload/images/customview/image/2018/08/09/1533779966550231.jpeg\" title=\"1533779966550231.jpeg\" alt=\"1.jpeg\"/></p><p><span style=\"color: rgb(255, 0, 0);\">ShopXO</span></p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \">秀，身材苗条！</span></p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \"></span></p><p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">在欧美的排版业界中，使用 Arial 的作品意即是「不使用 Helvetica 的作品」，会被认為是设计师对字体的使用没有概念或是太容易妥协，基本上我大致也是同意。</p><p style=\"box-sizing: border-box; margin-top: 1.6rem; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \"><br/></p><p style=\"box-sizing: border-box; margin-top: 1.6rem; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">因為 Helvetica 只有 Mac 上才有內建，Windows 用戶除非花錢買，不然是沒有 Helvetica 能用，所以使用 Arial 的設計師往往被看成是不願意對 Typography 花錢，專業素養不到家的人。除了在確保網頁相容性等絕對必需的情況外，幾乎可以說是不應該使用的字體。</p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \"><br/></span></p><p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">在欧美的排版业界中，使用 Arial 的作品意即是「不使用 Helvetica 的作品」，会被认為是设计师对字体的使用没有概念或是太容易妥协，基本上我大致也是同意。</p><p style=\"box-sizing: border-box; margin-top: 1.6rem; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">因為 Helvetica 只有 Mac 上才有內建，Windows 用戶除非花錢買，不然是沒有 Helvetica 能用，所以使用 Arial 的設計師往往被看成是不願意對 Typography 花錢，專業素養不到家的人。除了在確保網頁相容性等絕對必需的情況外，幾乎可以說是不應該使用的字體。</p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \"><br/></span></p><p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">在欧美的排版业界中，使用 Arial 的作品意即是「不使用 Helvetica 的作品」，会被认為是设计师对字体的使用没有概念或是太容易妥协，基本上我大致也是同意。</p><p style=\"box-sizing: border-box; margin-top: 1.6rem; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">因為 Helvetica 只有 Mac 上才有內建，Windows 用戶除非花錢買，不然是沒有 Helvetica 能用，所以使用 Arial 的設計師往往被看成是不願意對 Typography 花錢，專業素養不到家的人。除了在確保網頁相容性等絕對必需的情況外，幾乎可以說是不應該使用的字體。</p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \"><br/></span></p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \"><br/></span></p><p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">在欧美的排版业界中，使用 Arial 的作品意即是「不使用 Helvetica 的作品」，会被认為是设计师对字体的使用没有概念或是太容易妥协，基本上我大致也是同意。</p><p style=\"box-sizing: border-box; margin-top: 1.6rem; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">因為 Helvetica 只有 Mac 上才有內建，Windows 用戶除非花錢買，不然是沒有 Helvetica 能用，所以使用 Arial 的設計師往往被看成是不願意對 Typography 花錢，專業素養不到家的人。除了在確保網頁相容性等絕對必需的情況外，幾乎可以說是不應該使用的字體。</p><p><span style=\"color: rgb(38, 38, 38); font-family: 微软雅黑, \"><br/></span></p><p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">在欧美的排版业界中，使用 Arial 的作品意即是「不使用 Helvetica 的作品」，会被认為是设计师对字体的使用没有概念或是太容易妥协，基本上我大致也是同意。</p><p style=\"box-sizing: border-box; margin-top: 1.6rem; margin-bottom: 1.6rem; color: rgb(51, 51, 51); font-family: \">因為 Helvetica 只有 Mac 上才有內建，Windows 用戶除非花錢買，不然是沒有 Helvetica 能用，所以使用 Arial 的設計師往往被看成是不願意對 Typography 花錢，專業素養不到家的人。除了在確保網頁相容性等絕對必需的情況外，幾乎可以說是不應該使用的字體。</p><p><br/></p>',NULL,NULL,1,1,1,0,937,'','','',1484965691,1669084761);
 
-/*!40000 ALTER TABLE `sxo_custom_view` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -963,7 +938,6 @@ VALUES
 	(13,0,'/static/upload/images/express/images/20180917104750_logo.png','宅急送','',1,0,1530429907,1537152470),
 	(14,0,'/static/upload/images/express/images/20180917104757_logo.png','京东快递','',1,0,1530429926,1605775704);
 
-/*!40000 ALTER TABLE `sxo_express` ENABLE KEYS */;
 UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sxo_form_table_user_fields`;
@@ -1049,7 +1023,6 @@ VALUES
 	(11,3,-1,'夏季复古ins风格网红SP同款 短袖大圆领香槟色蕾丝绣花钉珠连衣裙','','','',0,2664,'件','/static/upload/images/goods/2019/01/14/1547455566118614.jpg','0.00-422.00',0.00,422.00,'160.00-258.00',160.00,258.00,0,1,0,1,1,'<p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><strong><span style=\"color: rgb(153, 51, 255);\">【品牌】欧单 学媛风 猫咪良品</span></strong></strong></span></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><span style=\"color: rgb(153, 51, 255);\"><strong><strong>【吊牌】xueyuanfeng&nbsp;</strong></strong></span></strong></span><strong style=\"font-size: 18px; line-height: 27px;\"><strong><span style=\"color: rgb(153, 51, 255);\">猫咪良品</span></strong></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><strong><strong>【面料质地】网纱绣花钉珠拼接蕾丝</strong></strong></strong></span><span style=\"font-size: 18px;\"><strong><strong><strong>&nbsp;</strong></strong></strong></span><span style=\"font-size: 18px;\"><strong><strong><strong>有</strong></strong></strong></span><strong style=\"font-size: 18px; line-height: 1.5;\"><strong><strong>拉链有内衬</strong></strong></strong><strong style=\"font-size: 18px;\"><strong><strong><span style=\"font-family: 微软雅黑;\"><strong>（非专业机构鉴定，介意请慎拍）</strong></span></strong></strong></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><strong><span style=\"font-size: 18px;\"><span style=\"color: rgb(153, 51, 255);\"></span><span style=\"color: rgb(153, 51, 255);\"></span><span style=\"color: rgb(153, 51, 255);\"><span style=\"background-color: rgb(255, 255, 0);\"><strong style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(153, 51, 255);\">好的衣服需要好好呵护，务必请冷水手洗(切记别浸泡)拧干就晾晒或则干洗哦~</span></strong></span></span></span></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><span style=\"color: rgb(153, 51, 255);\"><strong><span style=\"color: rgb(153, 51, 153);\"><strong>【商品颜色】实物拍摄 香槟色 颜色很难拍有小色差属正常现象哦</strong></span></strong></span></strong></span></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><span style=\"color: rgb(153, 51, 255);\"><strong><span style=\"color: rgb(153, 51, 153);\"></span></strong></span></strong></span><span style=\"font-size: 18px;\"><strong><span style=\"color: rgb(153, 51, 255);\"><strong><span style=\"color: rgb(153, 51, 153);\"></span></strong></span></strong></span></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><span style=\"color: rgb(153, 51, 255);\"><strong><strong>【商品尺寸】XS/S/M/L<strong style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(153, 51, 255);\"><strong><strong>&nbsp;小高腰设计 胸那考虑撑开因素哦 微弹的哦</strong></strong></span></strong><br/></strong></strong></span></strong></span></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"font-size: 18px;\"><strong><span style=\"color: rgb(153, 51, 255);\"></span></strong></span></p><p style=\"white-space: normal; text-align: center;\"><span style=\"color: rgb(255, 0, 0); font-family: 微软雅黑;\"><span style=\"font-size: 18px; line-height: 27px;\"></span></span></p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal; text-align: center;\"><strong><strong><span style=\"color: rgb(64, 64, 64);\"><strong><span style=\"color: rgb(255, 0, 0);\"><span style=\"font-family: 微软雅黑;\">XS码尺寸: 衣长82CM.胸围80</span></span></strong></span><strong style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(255, 0, 0);\"><span style=\"font-family: 微软雅黑;\">内合适</span></span></strong><span style=\"color: rgb(64, 64, 64);\"><strong><span style=\"color: rgb(255, 0, 0);\"><span style=\"font-family: 微软雅黑;\">.腰围63CM</span></span></strong></span><strong style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(255, 0, 0);\"><span style=\"font-family: 微软雅黑;\">.臀围86CM</span></span></strong></strong></strong></p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal; text-align: center;\"><strong><strong><span style=\"color: rgb(255, 0, 0);\">S码尺寸: 衣长83CM.胸围84</span></strong><strong style=\"line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\">内合适</span></strong><strong><span style=\"color: rgb(255, 0, 0);\">.腰围67CM</span></strong><strong style=\"line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\">.臀围90CM</span></strong></strong></p><p style=\"white-space: normal; text-align: center;\"><strong><strong><span style=\"color: rgb(255, 0, 0);\">M码尺寸: 衣长84CM.胸围88</span></strong><strong style=\"line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\">内合适</span></strong><strong><span style=\"color: rgb(255, 0, 0);\">.腰围71CM</span></strong><strong style=\"line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\">.臀围94CM</span></strong></strong></p><p style=\"white-space: normal; text-align: center;\"><strong><strong><span style=\"color: rgb(255, 0, 0);\">L码尺寸: 衣长85CM.胸围92</span></strong><strong style=\"line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\">内合适</span></strong><strong><span style=\"color: rgb(255, 0, 0);\">.腰围75CM</span></strong><strong style=\"line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\">.臀围98CM</span></strong></strong></p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal; text-align: center;\"><strong style=\"font-size: 18px; line-height: 27px;\"><span style=\"color: rgb(255, 0, 0);\"><span style=\"font-family: 微软雅黑;\"><strong><strong style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(153, 51, 255);\"><strong><span style=\"color: rgb(0, 0, 255);\"><strong><span style=\"color: rgb(255, 0, 0); font-family: 新宋体;\">（测量单位是CM，每个人的测量方式不一样，测量的尺寸数据可能会有1~3厘米的差异，请MM们谅解哦）</span></strong></span></strong></span></strong></strong></span></span></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><strong><span style=\"color: rgb(153, 51, 255);\"><strong><span style=\"color: rgb(153, 51, 153);\"><span style=\"color: rgb(0, 0, 255);\"><span style=\"color: rgb(255, 0, 0); font-family: 新宋体;\"></span></span></span></strong></span></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><strong style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(68, 68, 68);\"><span style=\"background-color: rgb(92, 81, 80);\"><span style=\"background-color: rgb(255, 255, 255);\">PS：常规码数，可按平时号选择哦。修身</span></span></span></strong><strong style=\"line-height: 1.5; color: rgb(64, 64, 64);\"><span style=\"color: rgb(68, 68, 68);\"><span style=\"background-color: rgb(92, 81, 80);\"><span style=\"background-color: rgb(255, 255, 255);\">版型，如果腰粗可以适当考虑大1号哦~</span></span></span></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><strong style=\"line-height: 1.5; color: rgb(64, 64, 64);\"><span style=\"color: rgb(68, 68, 68);\"><span style=\"background-color: rgb(92, 81, 80);\"><span style=\"background-color: rgb(255, 255, 255);\">大圆领，每个人的身材曲线不同，领口不会很平的哦，请谅解~</span></span></span></strong></p><p style=\"margin-top: 1.12em; margin-bottom: 1.12em; white-space: normal; padding: 0px; font-family: tahoma, arial, 宋体, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); text-align: center;\"><strong style=\"line-height: 1.5; color: rgb(64, 64, 64);\"><span style=\"color: rgb(68, 68, 68);\"><span style=\"background-color: rgb(92, 81, 80);\"><span style=\"background-color: rgb(255, 255, 255);\">肩膀那有暗扣哦，可以很好的隐藏了内衣的肩带哦~袖子那略硬哦~</span></span></span></strong></p><p><br/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547455601898622.jpg\"/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547455601528614.jpg\"/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547455601314107.jpg\"/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547455601168384.jpg\"/></p><p><br/></p>',4,200011,10000422,'',1,'','','','','',0,1547455700,1669711434),
 	(12,3,0,'ZK星星绣花雪纺连衣裙中长款sukol裙少女心温柔超仙女chic裙子夏','','轻奢醋酸面料，高标准的生产要求,品质保证','xxhh',2,3552,'条','/static/upload/images/goods/2019/01/14/1547455890402147.jpg','1.00-673.00',1.00,673.00,'0.00-200.00',0.00,200.00,100,1,0,0,1,'<p>ZK星星绣花雪纺连衣裙中长款sukol裙少女心温柔超仙女chic裙子夏</p><p>夏季爆款连衣裙</p><table class=\"am-table am-table-bordered\"><tbody><tr class=\"firstRow\"><td><span style=\"background-color: rgb(255, 0, 0);\"><strong>11</strong></span></td><td><strong>22</strong></td><td><strong>33</strong></td><td><strong>44</strong></td><td><strong>55</strong></td><td><strong>66</strong></td></tr><tr><td>q</td><td>w</td><td>e</td><td>r</td><td>t</td><td>y</td></tr><tr><td>a</td><td>s</td><td>d</td><td>f</td><td>g</td><td>h</td></tr><tr><td>z</td><td>x</td><td>c</td><td>v</td><td>b</td><td>n</td></tr></tbody></table><p><br/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547456214155362.jpg\" title=\"1547456214155362.jpg\" alt=\"d-1.jpg\"/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547455907486857.jpg\"/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547455907256518.jpg\"/></p><p><img src=\"/static/upload/images/goods/2019/01/14/1547456228913731.jpg\" title=\"1547456228913731.jpg\" alt=\"d-2.jpg\"/></p>',3,27,1057,'',1,'','','','连衣裙,裙子','夏季连衣裙，瘦身裙子',0,1547456230,1669711434);
 
-/*!40000 ALTER TABLE `sxo_goods` ENABLE KEYS */;
 UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sxo_goods_browse`;
@@ -1941,7 +1914,6 @@ VALUES
 	(892,876,'','戏曲综艺','','','','',1,0,1,'','','',1529042764,0),
 	(895,57,'','其他','','','','',0,0,1,'','','',1659924575,0);
 
-/*!40000 ALTER TABLE `sxo_goods_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2022,7 +1994,6 @@ VALUES
 	(1709,57,70,1667140265),
 	(1710,57,574,1667140265);
 
-/*!40000 ALTER TABLE `sxo_goods_category_join` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2110,7 +2081,6 @@ VALUES
 	(1594,9,'/static/upload/images/goods/2019/01/14/1547454713800333.jpg','',2,1660831819),
 	(1595,9,'/static/upload/images/goods/2019/01/14/1547454713456602.jpg','',3,1660831819);
 
-/*!40000 ALTER TABLE `sxo_goods_content_app` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2192,7 +2162,6 @@ VALUES
 	(1251,9,1,'组合形式','单件',1660831819),
 	(1252,9,0,'款式类别','图案花纹',1660831819);
 
-/*!40000 ALTER TABLE `sxo_goods_params` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2219,7 +2188,6 @@ INSERT INTO `sxo_goods_params_template` (`id`, `category_id`, `name`, `is_enable
 VALUES
 	(1,2,'服饰鞋包连衣裙',1,10,1606554077,1661481310);
 
-/*!40000 ALTER TABLE `sxo_goods_params_template` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2253,7 +2221,6 @@ VALUES
 	(52,1,1,'组合形式','单件',1661481295),
 	(53,1,0,'款式类别','图案花纹',1661481295);
 
-/*!40000 ALTER TABLE `sxo_goods_params_template_config` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2318,7 +2285,6 @@ VALUES
 	(1409,9,'/static/upload/images/goods/2019/01/14/1547454702272215.jpg',1,1,1660831819),
 	(1410,9,'/static/upload/images/goods/2019/01/14/1547454702814719.jpg',1,2,1660831819);
 
-/*!40000 ALTER TABLE `sxo_goods_photo` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2384,7 +2350,6 @@ VALUES
 	(2405,9,120.00,160.00,888,0,0,17.00,0.00,'','',NULL,1666342581),
 	(2406,9,120.00,160.00,888,0,0,17.00,0.00,'','',NULL,1666342581);
 
-/*!40000 ALTER TABLE `sxo_goods_spec_base` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2410,7 +2375,6 @@ VALUES
 	(2,2,'颜色','白色,黑色,蓝色,咖啡色,浅蓝色,深灰色,灰色,紫色,浅灰色,黄色,红色',1,1661352726,1661352759),
 	(3,2,'尺码','S,M,L,XL,XXL,XXXL',1,1661415839,1661415850);
 
-/*!40000 ALTER TABLE `sxo_goods_spec_template` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2440,7 +2404,6 @@ VALUES
 	(699,9,'[{\"name\":\"白色\",\"images\":\"\\/static\\/upload\\/images\\/goods\\/2019\\/01\\/14\\/1547454702543219.jpg\"},{\"name\":\"粉色\",\"images\":\"\\/static\\/upload\\/images\\/goods\\/2019\\/01\\/14\\/1547454702272215.jpg\"},{\"name\":\"黑色\",\"images\":\"\\/static\\/upload\\/images\\/goods\\/2019\\/01\\/14\\/1547454702814719.jpg\"}]','颜色',1666342581),
 	(700,9,'[{\"name\":\"S\",\"images\":\"\"},{\"name\":\"M\",\"images\":\"\"},{\"name\":\"L\",\"images\":\"\"},{\"name\":\"XL\",\"images\":\"\"}]','尺码',1666342581);
 
-/*!40000 ALTER TABLE `sxo_goods_spec_type` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2526,7 +2489,6 @@ VALUES
 	(4319,9,2406,'黑色',1666342581),
 	(4320,9,2406,'XL',1666342581);
 
-/*!40000 ALTER TABLE `sxo_goods_spec_value` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2552,7 +2514,6 @@ INSERT INTO `sxo_layout` (`id`, `type`, `name`, `config`, `is_enable`, `add_time
 VALUES
 	(1,'layout_index_home_data','首页','',1,1626773296,1657982972);
 
-/*!40000 ALTER TABLE `sxo_layout` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2589,7 +2550,6 @@ VALUES
 	(21,'西部数码','https://www.west.cn/active/freetc/?ReferenceID=934057','西部数码国内知名服务器提供商',6,1,1,1566531132,0),
 	(22,'纵之格科技','https://www.zongzhige.com/','纵之格科技',0,1,1,1594273577,0);
 
-/*!40000 ALTER TABLE `sxo_link` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -2667,10 +2627,7 @@ VALUES
 	(54,0,'商品分类','http://shopxo.net/',0,'custom','header',0,1,0,1556015784,1626336700),
 	(55,0,'如何注册成为会员','',1,'article','footer',0,1,0,1616685505,0);
 
-/*!40000 ALTER TABLE `sxo_navigation` ENABLE KEYS */;
 UNLOCK TABLES;
-
-
 
 DROP TABLE IF EXISTS `sxo_order`;
 
@@ -3342,7 +3299,6 @@ VALUES
 	(496,38,'获取商品基础模板','Goods','BaseTemplate','',6,0,'',1553964354),
 	(497,222,'获取地区编号数据','Region','CodeData','',63,0,'',1553964354);
 
-/*!40000 ALTER TABLE `sxo_power` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -3400,7 +3356,6 @@ VALUES
 	(27,'toutiao',1,'/pages/user-order/user-order','/static/upload/images/quick_nav/2020/09/11/1599808001838784.png','订单',1,'#996633',0,1599808005,1599808064),
 	(28,'toutiao',3,'ShopXO|上海浦东新区张江高科技园区XXX号|121.633055|31.21412','/static/upload/images/quick_nav/2020/09/17/1600321639662998.png','地图',1,'#0066FF',0,1599808052,1600321670);
 
-/*!40000 ALTER TABLE `sxo_quick_nav` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -6908,7 +6863,6 @@ VALUES
 	(3446,377,'胡杨河市',3,'','',0.0000000000,0.0000000000,0,1,1649559942,0),
 	(3447,377,'新星市',3,'','',0.0000000000,0.0000000000,0,1,1649559942,0);
 
-/*!40000 ALTER TABLE `sxo_region` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -6931,7 +6885,6 @@ VALUES
 	(1,'超级管理员',1,1481350313,0),
 	(13,'管理员',1,1484402362,1667467423);
 
-/*!40000 ALTER TABLE `sxo_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -6956,7 +6909,6 @@ INSERT INTO `sxo_role_plugins` (`id`, `role_id`, `name`, `plugins`, `add_time`)
 VALUES
 	(21,13,'进销存','erp',1667467423);
 
-/*!40000 ALTER TABLE `sxo_role_plugins` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -7062,7 +7014,6 @@ VALUES
 	(5121,13,122,1667467423),
 	(5122,13,331,1667467423);
 
-/*!40000 ALTER TABLE `sxo_role_power` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -7102,7 +7053,6 @@ VALUES
 	(30,0,'16000-20000',16000,20000,1,0,1535684745,1536284805),
 	(31,0,'20000以上',20000,0,1,0,1535684797,1536284828);
 
-/*!40000 ALTER TABLE `sxo_screening_price` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -7169,7 +7119,6 @@ VALUES
 	(19,'kuaishou',1,'/pages/goods-search/goods-search?keywords=包','/static/upload/images/slide/2021/11/22/1637564231868321.png','轮播1','',1,0,1533865442,1637564257),
 	(20,'kuaishou',1,'/pages/goods-detail/goods-detail?goods_id=12','/static/upload/images/slide/2021/11/22/1637564273444601.jpeg','轮播2','',1,0,1533866350,1637564304);
 
-/*!40000 ALTER TABLE `sxo_slide` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -7332,7 +7281,6 @@ INSERT INTO `sxo_warehouse` (`id`, `name`, `alias`, `level`, `is_enable`, `conta
 VALUES
 	(1,'默认仓库','上海仓',1,1,'Devil','17666666655',9,152,1896,'浦江科技广场',121.5140560000,31.1023570000,1,0,1594207406,1669711434);
 
-/*!40000 ALTER TABLE `sxo_warehouse` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -7369,7 +7317,6 @@ VALUES
 	(130,1,11,1,2664,1669711314,1669711343),
 	(131,1,12,1,3552,1669711315,1669711330);
 
-/*!40000 ALTER TABLE `sxo_warehouse_goods` ENABLE KEYS */;
 UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sxo_warehouse_goods_spec`;
